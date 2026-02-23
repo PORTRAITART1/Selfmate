@@ -1,0 +1,37 @@
+selfmate-app/
+├── .expo/                  # Fichiers de configuration Expo (générés)
+├── .gitignore              # Fichiers à ignorer par Git
+├── app.json                # Configuration de l'app (nom, icône, splash)
+├── assets/                 # Images, polices, icônes
+│   ├── icon.png
+│   ├── splash.png
+│   └── fonts/
+├── babel.config.js         # Configuration Babel
+├── package.json            # Dépendances et scripts
+├── src/                    # Tout le code source
+│   ├── components/         # Composants réutilisables (boutons, cartes...)
+│   │   ├── Button.js
+│   │   ├── ServiceCard.js
+│   │   └── RatingStars.js
+│   ├── screens/            # Écrans de l'application
+│   │   ├── HomeScreen.js
+│   │   ├── ProfileScreen.js
+│   │   ├── ServiceDetailScreen.js
+│   │   ├── CreateServiceScreen.js
+│   │   └── LoginScreen.js
+│   ├── navigation/         # Configuration de la navigation
+│   │   └── AppNavigator.js
+│   ├── services/           # Appels API, intégration Pi SDK
+│   │   ├── piService.js    # Initialisation et transactions Pi
+│   │   ├── api.js          # Appels à ton backend (si nécessaire)
+│   │   └── authService.js  # Gestion de l'authentification
+│   ├── utils/              # Fonctions utilitaires
+│   │   ├── formatDate.js
+│   │   └── validation.js
+│   ├── constants/          # Constantes (couleurs, thème, clés API)
+│   │   ├── colors.js
+│   │   └── config.js
+│   └── context/            (optionnel) Gestion d'état global (Context API)
+│       └── UserContext.js
+├── App.js                  # Point d'entrée principal
+└── README.md               # Présentation du projet, installation
